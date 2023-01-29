@@ -1,0 +1,21 @@
+{
+	"configurations": [
+		{
+			"name": "ARM-Debug",
+			"cwd": "${workspaceRoot}",
+			"executable": "${workspaceRoot}\\output\\STM32_LoRa_v2.0.elf",
+			"svdFile": "x:\\NextCloudStorage\\ImportantData\\VSCode\\VSCode_portable\\data\\user-data\\User\\globalStorage\\semyon-ivanov.cortex-builder\\SVD\\STM32L4X1\\STM32L4X1.svd",
+			"request": "launch",
+			"type": "cortex-debug",
+			"servertype": "openocd",
+			"device": "cortex-m4",
+			"interface": "swd",
+			"runToEntryPoint": "main",
+			"configFiles": [
+				"X:\\NextCloudStorage\\ImportantData\\VSCode\\openocd-20211118\\OpenOCD-20211118-0.11.0\\share\\openocd\\scripts\\interface\\stlink.cfg",
+				"X:\\NextCloudStorage\\ImportantData\\VSCode\\openocd-20211118\\OpenOCD-20211118-0.11.0\\share\\openocd\\scripts\\target\\stm32l4x.cfg"
+			]
+		}
+	],
+	"version": "0.2.0"
+}

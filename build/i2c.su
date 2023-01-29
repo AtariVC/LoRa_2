@@ -1,0 +1,9 @@
+Periph/source/i2c.c:5:6:I2C_init	16	static
+Periph/source/i2c.c:70:6:I2C_HandleTransfer	24	static
+Periph/source/i2c.c:78:13:I2C_check_flag	24	static
+Periph/source/i2c.c:87:6:I2C_Clear_Error_Flags	16	static
+Periph/source/i2c.c:115:13:I2C_Read_byte_St_ReSt	48	static
+Periph/source/i2c.c:187:13:I2C_Read_word_u16_St_ReSt	40	static
+Periph/source/i2c.c:285:13:I2C_Read_word_u24_St_ReSt	48	static
+Periph/source/i2c.c:391:13:I2C_Write_word_u16_St	40	static
+Periph/source/i2c.c:478:13:I2C_Write_byte_St	40	static

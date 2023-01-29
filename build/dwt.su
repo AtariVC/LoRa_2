@@ -1,0 +1,8 @@
+Cortex/source/dwt.c:3:10:DWT_GetDelta	16	static
+Cortex/source/dwt.c:7:10:DWT_GetMicro	4	static
+Cortex/source/dwt.c:11:10:DWT_Get_Current_Tick	4	static
+Cortex/source/dwt.c:16:10:DWT_Elapsed_Tick	16	static
+Cortex/source/dwt.c:24:6:DWT_Init	4	static
+Cortex/source/dwt.c:33:6:DWT_Delay_us	24	static
+Cortex/source/dwt.c:41:13:DWT_Delay_ms	16	static
+Cortex/source/dwt.c:46:6:DWT_Delay_With_Action	32	static

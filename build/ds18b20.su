@@ -1,0 +1,5 @@
+ExternalDevices/source/ds18b20.c:6:9:DS18B20_StartTempMeas	24	static
+ExternalDevices/source/ds18b20.c:24:9:DS18B20_ReadScratchpad	24	static
+ExternalDevices/source/ds18b20.c:34:9:DS18B20_Init	24	static
+ExternalDevices/source/ds18b20.c:50:6:DS18B20_ReadROM	16	static
+ExternalDevices/source/ds18b20.c:56:10:DS18B20_ReadTemperature	24	static

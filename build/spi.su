@@ -1,0 +1,10 @@
+Periph/source/spi.c:3:6:spi_init	24	static
+Periph/source/spi.c:46:6:spi_write	16	static
+Periph/source/spi.c:51:9:spi_xfer	16	static
+Periph/source/spi.c:61:9:spi_txrx	16	static
+Periph/source/spi.c:70:6:spi_send8	16	static
+Periph/source/spi.c:77:9:spi_recieve8	24	static
+Periph/source/spi.c:111:6:spi_send_array	32	static
+Periph/source/spi.c:116:6:spi_send16	24	static
+Periph/source/spi.c:126:9:spi_waiting_read8	16	static
+Periph/source/spi.c:131:9:spi_request_read8	16	static

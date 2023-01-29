@@ -1,0 +1,16 @@
+ExternalDevices/source/sx1278.c:7:6:newLoRa	48	static
+ExternalDevices/source/sx1278.c:21:6:LoRa_reset	16	static
+ExternalDevices/source/sx1278.c:28:6:LoRa_gotoMode	24	static
+ExternalDevices/source/sx1278.c:57:9:LoRa_readRegister	24	static
+ExternalDevices/source/sx1278.c:72:6:LoRa_writeRegister	24	static
+ExternalDevices/source/sx1278.c:86:6:LoRa_writeRegisters	32	static
+ExternalDevices/source/sx1278.c:100:6:LoRa_setFrequency	24	static
+ExternalDevices/source/sx1278.c:122:6:LoRa_setSpreadingFactor	24	static
+ExternalDevices/source/sx1278.c:139:6:LoRa_setPower	16	static
+ExternalDevices/source/sx1278.c:144:6:LoRa_setOCP	24	static
+ExternalDevices/source/sx1278.c:162:6:LoRa_setTOMsb_setCRCon	24	static
+ExternalDevices/source/sx1278.c:173:9:LoRa_transmit	32	static
+ExternalDevices/source/sx1278.c:208:6:LoRa_startReceiving	16	static
+ExternalDevices/source/sx1278.c:213:9:LoRa_receive	40	static
+ExternalDevices/source/sx1278.c:239:5:LoRa_getRSSI	24	static
+ExternalDevices/source/sx1278.c:245:10:LoRa_init	24	static

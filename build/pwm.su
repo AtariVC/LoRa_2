@@ -1,0 +1,7 @@
+Periph/source/pwm.c:12:6:PWM_init	32	static
+Periph/source/pwm.c:76:6:PWM_start_single	16	static
+Periph/source/pwm.c:80:6:PWM_start_all	16	static
+Periph/source/pwm.c:85:6:PWM_stop_all	16	static
+Periph/source/pwm.c:90:6:PWM_change_fill	24	static
+Periph/source/pwm.c:104:6:PWM_stop_single	16	static
+Periph/source/pwm.c:114:6:PWM_deinit	16	static

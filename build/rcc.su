@@ -1,0 +1,2 @@
+Periph/source/rcc.c:6:5:RCC_init_hse	32	static
+Periph/source/rcc.c:75:5:RCC_init_hsi	32	static

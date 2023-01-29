@@ -1,0 +1,5 @@
+Main/code/periph_hendlers.c:9:6:USART3_IRQHandler	8	static
+Main/code/periph_hendlers.c:12:6:EXTI9_5_IRQHandler	8	static
+Main/code/periph_hendlers.c:17:6:ADC1_IRQHandler	8	static
+Main/code/periph_hendlers.c:20:6:RTC_WKUP_IRQHandler	4	static
+Main/code/periph_hendlers.c:31:6:RTC_Alarm_IRQHandler	4	static

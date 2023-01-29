@@ -1,0 +1,4 @@
+x:/NextCloudStorage/ImportantData/VSCode/VSCode_portable/data/user-data/User/globalStorage/semyon-ivanov.cortex-builder/Core/core_cm4.h:1814:22:__NVIC_SetPriority	16	static
+x:/NextCloudStorage/ImportantData/VSCode/VSCode_portable/data/user-data/User/globalStorage/semyon-ivanov.cortex-builder/Core/core_cm4.h:2022:26:SysTick_Config	16	static
+Main/code/System.c:55:10:ReverseBytes	128	static
+Main/code/System.c:63:6:System_Init	760	static

@@ -1,0 +1,7 @@
+x:/NextCloudStorage/ImportantData/VSCode/VSCode_portable/data/user-data/User/globalStorage/semyon-ivanov.cortex-builder/Core/core_cm4.h:1684:22:__NVIC_EnableIRQ	16	static
+Periph/source/gpio.c:46:13:gpio_calculate	16	static
+Periph/source/gpio.c:65:6:gpio_init	32	static
+Periph/source/gpio.c:93:6:gpio_state	24	static
+Periph/source/gpio.c:102:6:gpio_toggle	24	static
+Periph/source/gpio.c:110:12:gpio_read	24	static
+Periph/source/gpio.c:115:6:gpio_exti_init	32	static

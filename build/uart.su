@@ -1,0 +1,4 @@
+x:/NextCloudStorage/ImportantData/VSCode/VSCode_portable/data/user-data/User/globalStorage/semyon-ivanov.cortex-builder/Core/core_cm4.h:1684:22:__NVIC_EnableIRQ	16	static
+Periph/source/uart.c:8:6:UART_init	24	static
+Periph/source/uart.c:66:6:UART_tx	24	static
+Periph/source/uart.c:72:6:UART_tx_string	24	static

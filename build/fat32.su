@@ -1,0 +1,3 @@
+Middleware/source/fat32.c:10:6:FAT32_init	528	static
+Middleware/source/fat32.c:46:9:FAT32_get_file_start_cluster	24	static
+Middleware/source/fat32.c:60:10:FAT32_check_file_next_cluster	16	static

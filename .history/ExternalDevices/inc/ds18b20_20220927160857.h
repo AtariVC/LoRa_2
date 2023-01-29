@@ -1,0 +1,98 @@
+#ifndef INC_DS18B20_H_
+#define INC_DS18B20_H_
+
+#include "stm32l4xx.h"
+#define DS18B20_SERIAL_NUMBER_LEN_BYTES   8
+
+// ---------------------- ROM Commands -----------------------------
+
+// When a system is initially powered up, the master must
+// identify the ROM codes of all slave devices on the bus,
+// which allows the master to determine the number of
+// slaves and their device types. The master learns the
+// ROM codes through a process of elimination that requires
+// the master to perform a Search ROM cycle (i.e., Search
+// ROM command followed by data exchange) as many
+// times as necessary to identify all of the slave devices.
+#define DS18B20_SEARCH_ROM                0xF0
+
+// This command can only be used when there is one slave
+// on the bus. It allows the bus master to read the slave’s
+// 64-bit ROM code without using the Search ROM procedure.
+// If this command is used when there is more than
+// one slave present on the bus, a data collision will occur
+// when all the slaves attempt to respond at the same time.
+#define DS18B20_READ_ROM                  0x33
+
+// The match ROM command followed by a 64-bit ROM
+// code sequence allows the bus master to address a
+// specific slave device on a multidrop or single-drop bus.
+// Only the slave that exactly matches the 64-bit ROM code
+// sequence will respond to the function command issued
+// by the master; all other slaves on the bus will wait for a
+// reset pulse.
+#define DS18B20_MATCH_ROM                 0x55
+
+// The master can use this command to address all devices on the bus simultaneously without
+// sending out any ROM code information. For example, the master can make all DS18B20s on
+// the bus perform simultaneous temperature conversions by issuing a Skip ROM command
+// followed by a Convert T [44h] command
+#define DS18B20_SKIP_ROM                  0xCC
+
+// The operation of this command is identical to the operation of the Search ROM command
+// except that only slaves with a set alarm flag will respond. This command allows the
+// master device to determine if any DS18B20s experienced an alarm condition during the
+// most recent temperature conversion
+#define DS18B20_ALARM_SEARCH              0xEC
+// ================================================================
+
+// --------------------- Function Commands ------------------------
+
+// Initiates a single temperature conversion. Following the conversion, the resulting
+// thermal data is stored in the 2-byte temperature register in the scratchpad memory
+// and the DS18B20 returns to its low-power idle state.
+#define DS18B20_CONVERT_TEMP              0x44
+
+// Allows the master to write 3 bytes of data to the DS18B20’s scratchpad. The first
+// data byte is written into the TH register (byte 2 of the scratchpad), the second
+// byte is written into the TL register (byte 3), and the third byte is written into
+// the configuration register (byte 4). Data must be transmitted least significant
+// bit first. All three bytes MUST be written before the master issues a reset,
+// or the data may be corrupted.
+#define DS18B20_WRITE_SCRATCHPAD          0x4E
+
+// Allows the master to read the contents of the scratchpad. The data transfer
+// starts with the least significant bit of byte 0 and continues through the scratchpad
+// until the 9th byte (byte 8 – CRC) is read. The master may issue a reset to terminate
+// reading at any time if only part of the scratchpad data is needed.
+#define DS18B20_READ_SCRATCHPAD           0xBE
+
+//Copies the contents of the scratchpad TH, TL and configuration
+//registers (bytes 2, 3 and 4) to EEPROM.
+#define DS18B20_COPY_SCRATCHPAD           0x48
+
+// ===============================================================
+
+typedef struct DS18B20
+{
+  uint8_t isInitialized;
+  uint8_t isConnected;
+  USART_TypeDef *uart;
+  uint8_t serialNumber[DS18B20_SERIAL_NUMBER_LEN_BYTES];
+  uint8_t temperatureLimitLow;
+  uint8_t temperatureLimitHigh;
+  uint8_t configRegister;
+  float temperature;
+} DS18B20;
+
+typedef struct DS18B20_Command
+{
+  uint8_t code;
+  uint8_t rxBytesNum;
+  uint8_t txBytesNum;
+} DS18B20_Command;
+
+void DS18B20_Init(DS18B20 *sensor, USART_TypeDef *USARTx);
+static uint8_t CalculateChecksum(uint8_t *data, uint8_t length);
+
+#endif  //INC_DS18B20_H_

@@ -1,0 +1,14 @@
+Periph/source/sdio.c:7:6:SDMMC_INIT	16	static
+Periph/source/sdio.c:33:10:SD_Cmd	24	static
+Periph/source/sdio.c:65:10:SD_GetError	24	static
+Periph/source/sdio.c:113:10:SD_Response	24	static
+Periph/source/sdio.c:175:10:SD_SetBlockSize	24	static
+Periph/source/sdio.c:189:10:SD_GetSCR	24	static
+Periph/source/sdio.c:238:10:SD_Init	40	static
+Periph/source/sdio.c:416:10:SD_SetBusWidth	24	static
+Periph/source/sdio.c:448:6:SD_SetBusClock	24	static
+Periph/source/sdio.c:460:6:SD_GetCardInfo	24	static
+Periph/source/sdio.c:531:10:SD_StopTransfer	16	static
+Periph/source/sdio.c:544:10:SD_GetCardState	24	static
+Periph/source/sdio.c:564:10:SD_ReadBlock	48	static
+Periph/source/sdio.c:645:10:SD_WriteBlock	64	static

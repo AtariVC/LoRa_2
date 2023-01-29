@@ -1,0 +1,9 @@
+x:/NextCloudStorage/ImportantData/VSCode/VSCode_portable/data/user-data/User/globalStorage/semyon-ivanov.cortex-builder/Core/core_cm4.h:1684:22:__NVIC_EnableIRQ	16	static
+x:/NextCloudStorage/ImportantData/VSCode/VSCode_portable/data/user-data/User/globalStorage/semyon-ivanov.cortex-builder/Core/core_cm4.h:1722:22:__NVIC_DisableIRQ	16	static
+Main/code/main.c:10:6:LED_BLINK	8	static
+Main/code/main.c:15:10:ReverseBytes	128	static
+Main/code/main.c:23:6:SEND_TO_SERVER	152	static
+Main/code/main.c:103:6:TemperatureSensorsMeasure	48	static
+Main/code/main.c:124:6:MakeMeasure	72	static
+Main/code/main.c:161:6:SEND_DATA_AND_SLEEP	8	static
+Main/code/main.c:170:5:main	8	static

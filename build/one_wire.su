@@ -1,0 +1,12 @@
+Periph/source/one_wire.c:12:9:OneWire_SendBit	24	static
+Periph/source/one_wire.c:24:9:OneWire_ReadBit	16	static
+Periph/source/one_wire.c:28:15:OneWire_Reset	24	static
+Periph/source/one_wire.c:36:9:OneWire_Read	24	static
+Periph/source/one_wire.c:44:6:OneWire_ReadArray	40	static
+Periph/source/one_wire.c:50:9:OneWire_Write	24	static
+Periph/source/one_wire.c:60:6:OneWire_WriteArray	32	static
+Periph/source/one_wire.c:66:6:OneWire_InitStruct	24	static
+Periph/source/one_wire.c:82:8:hasNextRom	32	static
+Periph/source/one_wire.c:121:9:OneWire_CRC8_ROM	24	static
+Periph/source/one_wire.c:136:5:OneWire_SearchDevices	32	static
+Periph/source/one_wire.c:153:15:OneWire_MatchRom	24	static
